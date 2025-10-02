@@ -25,7 +25,7 @@ async function onLoad() {
   const doc = params.get("doc");
   
   if (doc) { // This is a document page
-    const source = `/blobs/${doc}`;
+    const source = `./blobs/${doc}`;
     const img = new Image();
     img.onload = res200;
     img.onerror = res404;
